@@ -203,7 +203,7 @@ def make_confusion_matrix(Y_real, Y_pred, title="Confusion Matrix"):
 from sklearn.metrics import confusion_matrix
 
 # Calcula la matriz de confusión
-y_pred = KNN.generate_predict(x_testing)
+y_pred = modelo.generate_predict(x_testing)
 conf_matrix = confusion_matrix(y_testing, Y_pred)
 
 # Imprime la matriz de confusión
